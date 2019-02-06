@@ -14,21 +14,22 @@
       <h4>El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla, es una de las técnicas más simples para cifrar un mensaje. Cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.</h4>
     </div>
 
-    <form>
-      <textarea id=mensaje type="text" class="message" placeholder= "Ingrese texto aquí"></textarea>  
-    </form>
+    <div>
+      <textarea id="mensaje" type="text" class="message" placeholder= "Ingrese texto aquí"></textarea>  
+    </div>
 
-   <div>
-  <form>
-       Desplazamiento (Entre 1 al 65): <input type="number" class= "cantidad" name="quantity" min="1" max="65">
-        <input type="submit" value="enviar">
-  </form>
+  <div>
+    <br>
+       Desplazamiento : <input type="number" id="llave" class= "cantidad" name="quantity" min="1" max="65">
+  </div>
 
-  <input type="submit" value="Codificar" id="EncodeButton" class="button2" onclick="Encode()"> 
+<button id="encodeButton" class="button2"> Codificar </button> 
  
-  <input type="submit" value="Decodificar" id="DecodeButton" class="button2" onclick="Decode()">
+<button id="decodeButton" class="button2"> Decodificar </button>
 
-</div>
+  <div>
+      <textarea id="textResult" type="text" class="message" placeholder= "Aquí aparecerá tu resultado"></textarea>  
+  </div>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

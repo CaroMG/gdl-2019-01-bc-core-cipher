@@ -1,21 +1,19 @@
-let arr = [];
-	str = str.toUpperCase();
-	for(let i = 0; i < str.length ; i++ ){
+const encodeButton = () => {
+    const string = document.getElementById("mensaje").value;
+    const offset = parseInt(document.getElementById("llave").value);
+    let result = window.cipher.encode(offset, string);
+    document.getElementById("textResult").value = result;
+};
 
-		console.log('charCode ' + str.charCodeAt(i));
-		console.log(String.fromCharCode(str.charCodeAt(i)));
-		//para que el output text respete los espacios dentro del string
-		if (str.charCodeAt(i) === 32) {
-			console.log(String.fromCharCode(32));
-			arr.push(String.fromCharCode(32));
-		}
-		else {
-			console.log(String.fromCharCode(((str.charCodeAt(i) - 65 - offset) % 26 + 65)));
-			arr.push(String.fromCharCode(((str.charCodeAt(i) - 65 - offset) % 26 + 65)));
-			
-		}
+const cifrar = document.getElementById("encodeButton");
+cifrar.addEventListener("click", encodeButton);
 
-	}
- arr = arr.join('');
+const decodeButton = () => {
+    const string = document.getElementById("mensaje").value;
+    const offset = parseInt(document.getElementById("llave").value);
+    let result = window.cipher.decode(offset, string);
+    document.getElementById("textResult").value = result;
+};
 
-
+const descifrar = document.getElementById("decodeButton");
+descifrar.addEventListener("click", decodeButton);

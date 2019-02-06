@@ -1,37 +1,27 @@
 window.cipher = {
 
-encode:function  (text,offset) {
+  encode: function (offset, string) {
 
-  let encryption = "";
+    let encryption = "";
 
-  for (let i = 0; i <text.length;i ++) {
-
-      let codeASCII = (text.charCodeAt(i) - 65 + offset) % 26 + 65;
-
-      if (text [i] == " ") encryption = encryption + " ";
-
+    for (let i = 0; i < string.length; i++) {
+      let codeASCII = (string.charCodeAt(i) - 65 + offset) % 26 + 65;
+      if (string[i] == " ") encryption = encryption + " ";
       else encryption = encryption + String.fromCharCode(codeASCII);
+    }
+    return encryption;
+  },
+
+  decode: function (offset, string) {
+
+    let decryption = "";
+
+    for (let i = 0; i < string.length; i++) {
+      let codeASCII = (string.charCodeAt(i) + 65 - offset) % 26 + 65;
+      if (string[i] == " ") decryption = decryption + " ";
+      else decryption = decryption + String.fromCharCode(codeASCII);
+    }
+    return decryption;
 
   }
-
-  return encryption;
-}
-
-decode:function (text,offset) {
-
-  let decryption = "";
-
-  for (let i = 0; i < text.length; i++) {
-
-      let reveal = (text.charCodeAt(i)+ 65 - offset) % 26 + 65;
-
-      if (text[i] == " ") decryption = decryption +" ";
-
-      else decryption = decryption + String.fromCharCode(reveal);
-
-  }
-
-  return decryption;
-
-}
-}
+};
