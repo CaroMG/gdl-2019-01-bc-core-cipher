@@ -1,4 +1,5 @@
-const encodeButton = () => {
+const encodeButton = (event) => {
+    event.preventDefault();
     const string = document.getElementById("mensaje").value;
     const offset = parseInt(document.getElementById("llave").value);
     let result = window.cipher.encode(offset, string);
@@ -8,7 +9,8 @@ const encodeButton = () => {
 const cifrar = document.getElementById("encodeButton");
 cifrar.addEventListener("click", encodeButton);
 
-const decodeButton = () => {
+const decodeButton = (event) => { 
+    event.preventDefault();
     const string = document.getElementById("mensaje").value;
     const offset = parseInt(document.getElementById("llave").value);
     let result = window.cipher.decode(offset, string);

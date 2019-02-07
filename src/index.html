@@ -7,30 +7,33 @@
   </head>
   <body>
     <div id="root">
-      
 
 <h1><span class="border-text"> Cifrado César </span></h1>
 
       <h4>El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla, es una de las técnicas más simples para cifrar un mensaje. Cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.</h4>
     </div>
-
-    <div>
-      <textarea id="mensaje" type="text" class="message" placeholder= "Ingrese texto aquí"></textarea>  
+    <br>
+<form>
+<div class="flexBox">
+    <div class="row">
+      <div class="column"><textarea id="mensaje" type="text" class="messageBox" placeholder= "Ingrese texto aquí"></textarea>  
+      </div>
+      <div class="column"><textarea id="textResult" type="text" class="resultBox" placeholder= "Aquí aparecerá tu resultado"></textarea> 
+      </div>
     </div>
+  </div>
 
   <div>
     <br>
-       Desplazamiento : <input type="number" id="llave" class= "cantidad" name="quantity" min="1" max="65">
+       Desplazamiento: <input type="number" id="llave" class= "indicator" name="quantity" min="1" max="65">
   </div>
 
 <button id="encodeButton" class="button2"> Codificar </button> 
  
 <button id="decodeButton" class="button2"> Decodificar </button>
 
-  <div>
-      <textarea id="textResult" type="text" class="message" placeholder= "Aquí aparecerá tu resultado"></textarea>  
-  </div>
-
+  <button type="reset" class="button2">Limpiar</button>
+</form>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

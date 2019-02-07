@@ -33,7 +33,7 @@ body {
     display: inline-table;
   }
 
- .message {
+ .messageBox {
     padding: 4vw; 
     box-shadow: 1px 5px 15px 2px rgb(119, 113, 113);
     text-align: left; 
@@ -42,7 +42,24 @@ body {
     font-family: "Helvetica";
     font-size: .8rem;
     height: 15px;
-    width: 35%;
+    width: 60%;
+    top: 100px;      
+    left: 100px;        
+ }
+
+ .resultBox {
+    padding: 4vw; 
+    box-shadow: 1px 5px 15px 2px rgb(119, 113, 113);
+    text-align: left; 
+    margin: auto; 
+    display: block;
+    font-family: "Helvetica";
+    font-size: .8rem;
+    height: 15px;
+    width: 60%;
+    top: 100px;      
+    left: 100px;     
+
  }
 
 .button2 {
@@ -65,17 +82,38 @@ body {
         background: rgb(199, 128, 107);
 }
 
-.cantidad 
-{
+.flexBox {
+    margin: 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+#llave{
+    padding: 10px; 
+    box-shadow: 1px 5px 15px 2px rgb(119, 113, 113);
+    text-align: left; 
+    display: block;
+    font-family: "Helvetica";
+    font-size: 1rem;
+    height: 15px;
+    width: 15%;
+    top: 100px;      
+    left: 100px;  
 
 
 }
-
-
-
-
-
-    
 
 
 
