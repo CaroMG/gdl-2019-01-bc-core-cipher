@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
 
-<h1><span class="border-text"> Cifrado César </span></h1>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="root">
 
-      <h4>El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla, es una de las técnicas más simples para cifrar un mensaje. Cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.</h4>
-    </div>
-    <br>
-<form>
-<div class="flexBox">
-    <div class="row">
-      <div class="column"><textarea id="mensaje" type="text" class="messageBox" placeholder= "Ingrese texto aquí"></textarea>  
-      </div>
-      <div class="column"><textarea id="textResult" type="text" class="resultBox" placeholder= "Aquí aparecerá tu resultado"></textarea> 
-      </div>
-    </div>
+    <h1><span class="border-text"> Cifrado César </span></h1>
+
+    <h4>El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba
+      para
+      enviar órdenes secretas a sus generales en los campos de batalla, es una de las técnicas más simples para cifrar
+      un
+      mensaje. Cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones
+      (desplazamiento) más adelante en el mismo alfabeto.</h4>
   </div>
+  <br>
+  <form>
+    <div class="flexBox">
+      <div class="row">
+        <div class="column">Desplazamiento:<input type="number" id="llave" class="cantidad" name="quantity" min="1" max="65">
+        </div>
+        <div class="column">Ingresa texto aquí:<textarea id="mensaje" type="text" class="messageBox" placeholder="Ingrese texto aquí"></textarea>
+        </div>
+        <div class="column">Ve tu resultado:<textarea id="textResult" type="text" class="resultBox" placeholder="Aquí aparecerá tu resultado"></textarea>
+        </div>
+      </div>
+    </div>
+    <button id="encodeButton" class="button2"> Codificar </button>
+    <button id="decodeButton" class="button2"> Decodificar </button>
+    <div align: right>
+      <button type="reset" class="button2">Limpiar</button>
+    </div>
+  </form>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
 
-  <div>
-    <br>
-       Desplazamiento: <input type="number" id="llave" class= "indicator" name="quantity" min="1" max="65">
-  </div>
-
-<button id="encodeButton" class="button2"> Codificar </button> 
- 
-<button id="decodeButton" class="button2"> Decodificar </button>
-
-  <button type="reset" class="button2">Limpiar</button>
-</form>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
 </html>

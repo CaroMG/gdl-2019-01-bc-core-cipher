@@ -80,9 +80,16 @@ Usa este alfabeto simple (solamente mayúsculas y sin ñ):
 En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
 para definir el producto final a nivel de experiencia y de interfaz.
 
+                   CIFRADO CÉSAR                    
+
 * Quiénes son los principales usuarios de producto.
+Los principales usuarios para el producto, son personas que quisieran comunicarse en con el cifrado césar con cualquier otra persona y así puedan usar la aplicación del cifrado y decifrado, poder entender lo que quiera decir el mensaje y facilitarles la comunicación en clave, haciendolo rápido, eficiente y sencillo de utilizar ya que está hecho intuitivamente para que se le facilite al usuario al momento de ingresar a la página.
+
 * Cuáles son los objetivos de estos usuarios en relación con tu producto.
+El objetivo es que puedan cifrar/decifrar fácilmente el significado de cualquier texto que reciban o quieran enviar. 
+
 * Cómo crees que el producto que estás creando está resolviendo sus problemas.
+Es una herramienta útil y práctica, que facilita la vida del usuario, ya que sólo introduciendo el texto y cliqueando un botón podrá saber en segundos el contenido del mensaje, desencriptando la información y teniendo acceso sólo la persona que lo envia o recibe, para así darle más intimidad al usuario a la hora de compartir información.
 
 ### Interfaz de usuario (UI)
 
